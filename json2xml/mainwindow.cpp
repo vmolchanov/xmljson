@@ -4,22 +4,19 @@
 #include "filefactory.h"
 #include "file.h"
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
-{
-    ui->setupUi(this);
+MainWindow::MainWindow(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::MainWindow) {
 
+    ui->setupUi(this);
     _isJsonToXml = true;
 }
 
-MainWindow::~MainWindow()
-{
+MainWindow::~MainWindow() {
     delete ui;
 }
 
-void MainWindow::on_translateButton_clicked()
-{
+void MainWindow::on_translateButton_clicked() {
     QString value = ui->inputTextEdit->toPlainText();
 
     FileFactory fileFactory;
@@ -30,8 +27,7 @@ void MainWindow::on_translateButton_clicked()
     ui->outputTextEdit->setText(xml);
 }
 
-void MainWindow::on_changeDirectionButton_clicked()
-{
+void MainWindow::on_changeDirectionButton_clicked() {
     _isJsonToXml = !_isJsonToXml;
     _swapLabels();
 }

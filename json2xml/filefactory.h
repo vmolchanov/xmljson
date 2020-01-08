@@ -3,8 +3,7 @@
 
 #include "file.h"
 
-class FileFactory
-{
+class FileFactory {
 public:
     File* createFileByFlag(bool isJson);
 };

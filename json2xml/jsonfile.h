@@ -6,8 +6,7 @@
 #include <QXmlStreamWriter>
 #include "file.h"
 
-class JsonFile : public File
-{
+class JsonFile : public File {
 public:
     JsonFile();
     void parse(const QByteArray text);

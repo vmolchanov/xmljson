@@ -3,7 +3,6 @@
 #include <string>
 #include <QtXml>
 #include "xmlfile.h"
-//#include "xml2json.h"
 
 XmlFile::XmlFile() : File() {
 }

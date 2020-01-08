@@ -6,8 +6,7 @@
 #include "file.h"
 #include "xml2json.h"
 
-class XmlFile : public File
-{
+class XmlFile : public File {
 public:
     XmlFile();
 

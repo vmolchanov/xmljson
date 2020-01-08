@@ -8,8 +8,7 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
@@ -30,4 +29,4 @@ private:
 
     void _swapLabels();
 };
-#endif // MAINWINDOW_H
+#endif
