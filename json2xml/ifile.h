@@ -3,7 +3,7 @@
 
 #include <QApplication>
 
-class File {
+class IFile {
 public:
     virtual void parse(const QByteArray text) = 0;
 

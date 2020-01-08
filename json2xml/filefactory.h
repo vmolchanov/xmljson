@@ -1,11 +1,11 @@
 #ifndef FILEFACTORY_H
 #define FILEFACTORY_H
 
-#include "file.h"
+#include "ifile.h"
 
 class FileFactory {
 public:
-    File* createFileByFlag(bool isJson);
+    IFile* createFileByFlag(bool isJson);
 };
 
 #endif

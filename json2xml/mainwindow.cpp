@@ -2,7 +2,7 @@
 #include "ui_mainwindow.h"
 //#include"jsonfile.h"
 #include "filefactory.h"
-#include "file.h"
+#include "ifile.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -20,7 +20,7 @@ void MainWindow::on_translateButton_clicked() {
     QString value = ui->inputTextEdit->toPlainText();
 
     FileFactory fileFactory;
-    File *file = fileFactory.createFileByFlag(_isJsonToXml);
+    IFile *file = fileFactory.createFileByFlag(_isJsonToXml);
 
     QString xml = _translateText(value, file);
 
@@ -32,7 +32,7 @@ void MainWindow::on_changeDirectionButton_clicked() {
     _swapLabels();
 }
 
-QString MainWindow::_translateText(QString text, File *file) {
+QString MainWindow::_translateText(QString text, IFile *file) {
     QByteArray byteArray(text.toStdString().c_str(), text.length());
     file->parse(byteArray);
     return file->translate().toStdString().c_str();

@@ -4,7 +4,7 @@
 #include <QtXml>
 #include "xmlfile.h"
 
-XmlFile::XmlFile() : File() {
+XmlFile::XmlFile() : IFile() {
 }
 
 void XmlFile::parse(const QByteArray text) {

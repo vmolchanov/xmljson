@@ -6,7 +6,7 @@
 #include <QtMath>
 #include "jsonfile.h"
 
-JsonFile::JsonFile() : File() {
+JsonFile::JsonFile() : IFile() {
 }
 
 void JsonFile::parse(const QByteArray text) {

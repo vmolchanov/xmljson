@@ -20,8 +20,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    file.cpp \
     filefactory.cpp \
+    ifile.cpp \
     jsonfile.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -29,8 +29,8 @@ SOURCES += \
     xmlfile.cpp
 
 HEADERS += \
-    file.h \
     filefactory.h \
+    ifile.h \
     jsonfile.h \
     mainwindow.h \
     rapidjson/allocators.h \

@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "file.h"
+#include "ifile.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -25,7 +25,7 @@ private:
 
     bool _isJsonToXml;
 
-    QString _translateText(QString text, File *file);
+    QString _translateText(QString text, IFile *file);
 
     void _swapLabels();
 };

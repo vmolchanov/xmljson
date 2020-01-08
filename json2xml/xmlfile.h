@@ -3,10 +3,10 @@
 
 #include <QApplication>
 #include <QtXml>
-#include "file.h"
+#include "ifile.h"
 #include "xml2json.h"
 
-class XmlFile : public File {
+class XmlFile : public IFile {
 public:
     XmlFile();
 

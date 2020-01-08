@@ -4,9 +4,9 @@
 #include <QApplication>
 #include <QJsonDocument>
 #include <QXmlStreamWriter>
-#include "file.h"
+#include "ifile.h"
 
-class JsonFile : public File {
+class JsonFile : public IFile {
 public:
     JsonFile();
     void parse(const QByteArray text);

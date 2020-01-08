@@ -2,7 +2,7 @@
 #include "jsonfile.h"
 #include "xmlfile.h"
 
-File* FileFactory::createFileByFlag(bool isJson) {
+IFile* FileFactory::createFileByFlag(bool isJson) {
     if (isJson) {
         return new JsonFile();
     } else {
